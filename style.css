@@ -55,6 +55,10 @@ h1 {
     text-transform: uppercase;
 }
 
+.ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
+    text-transform: uppercase !important;
+}
+
 .ui.grid.container {
     margin-top: 3%;
 }

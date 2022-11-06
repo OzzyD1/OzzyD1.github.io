@@ -13,16 +13,38 @@
 </head>
 <body class="home">
 
-    <!-- Nav -->
-    <div class="ui borderless grey massive fixed top inverted menu">
-        <div class="ui container">
-            <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png"></a>
-            <div class="right menu">
-                <a class="active item" href="index.html">Home</a>
-                <a class="item" href="audio.html">Audio</a>
-                <a class="item" href="design.html">Design</a>
-                <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
-                <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
+    <!--PC Nav -->
+    <div class="ui tablet computer only padded grid">
+        <div class="ui borderless grey massive fixed top inverted menu">
+            <div class="ui container">
+                <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png"></a>
+                <div class="right menu">
+                    <a class="active item" href="index.html">Home</a>
+                    <a class="item" href="audio.html">Audio</a>
+                    <a class="item" href="design.html">Design</a>
+                    <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
+                    <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="ui mobile only grid">
+        <div class="ui borderless grey massive fixed top inverted menu">
+            <div class="ui container">
+                <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png"></a>
+                <div class="right menu">
+                    <div class="ui dropdown item"><i class="bars icon"></i>
+                        <div class="menu">
+                            <a class="active item" href="index.html">Home</a>
+                            <a class="item" href="audio.html">Audio</a>
+                            <a class="item" href="design.html">Design</a>
+                            <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
+                            <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -52,5 +74,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script>
+            $(document).ready(function() {
+            $(".ui.toggle.button").click(function() {
+                $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+            });
+    
+            $(".ui.dropdown").dropdown();
+    
+            });
+    </script>
 </body>
 </html>
