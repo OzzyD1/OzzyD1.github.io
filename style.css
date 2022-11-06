@@ -18,7 +18,7 @@ p {
 }
 
 h1 {
-    text-shadow: 2px 2px black;
+    text-shadow: .07em .07em black;
 }
 
 #mainText {
@@ -34,9 +34,9 @@ h1 {
 
 #bio {
     color: white;
-    font-size: 36px;
+    font-size: 2.5em;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: .08em;
 }
 
 #bioMobile {
