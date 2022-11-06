@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ozzy's Portfolio Website</title>
+    <meta name="description" content="Osvaldas Domarkas Portfolio">
+    <meta name="author" content="Osvaldas Domarkas">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+</head>
+<body class="rest">
+
+    <!-- PC Nav -->
+    <div class="ui borderless grey massive fixed top inverted menu">
+        <div class="ui container">
+            <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png" alt="Ozzy's Logo"></a>
+            <div class="right menu">
+                <a class="item" href="index.html">Home</a>
+                <a class="active item" href="websites.html">Websites</a>
+                <a class="item" href="audio.html">Audio</a>
+                <a class="item" href="design.html">Design</a>
+                <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
+                <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="ui mobile only grid">
+        <div class="ui borderless grey massive fixed top inverted menu">
+            <div class="ui container">
+                <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png" alt="Ozzy's Logo"></a>
+                <div class="right menu">
+                    <div class="ui dropdown item"><i class="bars icon"></i>
+                        <div class="menu">
+                            <a class="item" href="index.html">Home</a>
+                            <a class="active item" href="websites.html">Websites</a>
+                            <a class="item" href="audio.html">Audio</a>
+                            <a class="item" href="design.html">Design</a>
+                            <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
+                            <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Body -->
+    <div id="desc" class="ui stackable grid container">
+        <div class="row">
+            <div class="sixteen wide column">
+                <h1>
+                    Out of all the amazing and fun modules in my course, I did not expect web development to be my favourite.
+                    I have so much fun making websites and I devote more time than I need. I am excited for my future as a website developer.
+                </h1>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="row">
+            <div class="eight wide column">
+                <div class="ui segment">
+                    <a class="item" href="https://ozzyd.me/musicclub-website/">
+                        <img class="ui massive image" src="images/wemcpage.png" alt="Website Screenshot">
+                    </a>
+                </div>
+            </div>
+            <div class="center aligned eight wide column">
+                <h1 class="uppercase">Fictional Music Club Website</h1>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+        <div class="row">
+            <div class="eight wide column">
+                <div class="ui segment">
+                    <a class="item" href="https://ozzyd.me/javascript-quiz/">
+                        <img class="ui massive image" src="images/quizpage.png" alt="Website Screenshot">
+                    </a>
+                </div>
+            </div>
+            <div class="center aligned eight wide column">
+                <h1 class="uppercase">Javascript Quiz Game</h1>
+            </div>
+        </div>
+        <div class="ui divider"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script>
+        $(document).ready(function() {
+        $(".ui.toggle.button").click(function() {
+            $(".mobile.only.grid .ui.vertical.menu").toggle(100);
+        });
+
+        $(".ui.dropdown").dropdown();
+
+        });
+</script>
+</body>
+</html>
