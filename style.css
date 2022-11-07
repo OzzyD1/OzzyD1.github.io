@@ -3,14 +3,21 @@ body {
 }
 
 body.home {
+    background-color: #00b172;
     background-image: url("images/bg.png") !important; 
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 body.rest {
+    background-color: #00b172;
     background-image: url("images/bg2.png") !important; 
-    background-attachment: fixed;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 p {
@@ -18,7 +25,7 @@ p {
 }
 
 h1 {
-    text-shadow: .07em .07em black;
+    text-shadow: .05em .05em black;
 }
 
 #mainText {
