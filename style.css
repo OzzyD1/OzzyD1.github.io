@@ -85,3 +85,7 @@ h1 {
 .ui.grid.container {
     margin-top: 3%;
 }
+
+.ui.menu>.container, .ui.menu>.grid {
+    width: 90%;
+}
