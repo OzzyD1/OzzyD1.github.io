@@ -19,14 +19,14 @@
     <link rel="icon" type="image/x-icon" href="images/favivon.png">
     <link rel="apple-touch-icon" href="images/favivon.png">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
 </head>
 <body class="home">
-
-    <!--PC Nav -->
+<!--PC Nav -->
+<nav>
     <div class="ui computer only padded grid">
         <div class="ui borderless grey massive fixed top inverted menu">
             <div class="ui container">
@@ -35,7 +35,6 @@
                     <a class="active item" href="index.html">Home</a>
                     <a class="item" href="websites.html">Websites</a>
                     <a class="item" href="audio.html">Audio</a>
-                    <a class="item" href="design.html">Design</a>
                     <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
                     <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
                     <a class="item" href="https://www.linkedin.com/in/ozzyd/" target="_blank">LinkedIn</a>
@@ -43,7 +42,6 @@
             </div>
         </div>
     </div>
-
     <!-- Mobile Nav -->
     <div class="ui tablet mobile only grid">
         <div class="ui borderless grey massive fixed top inverted menu">
@@ -55,7 +53,6 @@
                             <a class="active item" href="index.html">Home</a>
                             <a class="item" href="websites.html">Websites</a>
                             <a class="item" href="audio.html">Audio</a>
-                            <a class="item" href="design.html">Design</a>
                             <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
                             <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
                         </div>
@@ -64,46 +61,38 @@
             </div>
         </div>
     </div>
-
-    <!-- PC Body -->
-    <div id="mainText" class="ui computer only grid">
-        <div class="eight wide column">
-            <h1 id="bio"> 
-                A Creative Computing Student who would describe myself as organised, adaptable, ambitious, diligent, out-going and most importantly, creative. 
+</nav>
+<!-- PC Body -->
+<div id="homeText" class="ui computer only grid">
+    <div class="eight wide column">
+        <h1 id="myName">Ozzy Domarkas</h1>
+        <div> 
+            <h4 id="profile">
+                A highly motivated and enthusiastic individual with a strong passion for problem-solving and self-directed learning. 
                 <br><br>
-                I possess excellent people and technical skills and therefore excel when working on collaborative environments.
+                Achieved a first-grade average of 86% and currently seeking an internship opportunity as a full-stack developer to further develop my skills.
                 <br><br>
-                After dabbling with multiple creative disciplines in college, I discovered my love for web design and programming. 
-                I am excited to pursue a rewarding career in development and learn new skills along the way. 
-            </h1>
+                Strongly interested in utilizing my knowledge and abilities to make a positive impact in the field of technology.
+            </h4>
         </div>
     </div>
-
-        <!-- Mobile Body -->
-        <div id="mainTextMobile" class="ui tablet mobile only grid">
-            <div class="sixteen wide column">
-                <h1 id="bioMobile"> 
-                    A Creative Computing Student who would describe myself as organised, adaptable, ambitious, diligent, out-going and most importantly, creative. 
-                    <br><br>
-                    I possess excellent people and technical skills and therefore excel when working on collaborative environments.
-                    <br><br>
-                    After dabbling with multiple creative disciplines in college, I discovered my love for web design and programming. 
-                    I am excited to pursue a rewarding career in development and learn new skills along the way. 
-                </h1>
-            </div>
+</div>
+<!-- Mobile Body -->
+<div id="mainTextMobile" class="ui tablet mobile only grid">
+    <div class="sixteen wide column">
+        <div> 
+            <h4>
+                A highly motivated and enthusiastic individual with a strong passion for problem-solving and self-directed learning. 
+                <br><br>
+                Achieved a first-grade average of 86% and currently seeking an internship opportunity as a full-stack developer to further develop my skills.
+                <br><br>
+                Strongly interested in utilizing my knowledge and abilities to make a positive impact in the field of technology.
+            </h4>
         </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-    <script>
-            $(document).ready(function() {
-            $(".ui.toggle.button").click(function() {
-                $(".mobile.only.grid .ui.vertical.menu").toggle(100);
-            });
-    
-            $(".ui.dropdown").dropdown();
-    
-            });
-    </script>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

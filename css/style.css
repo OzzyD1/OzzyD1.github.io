@@ -1,0 +1,80 @@
+body { 
+    font-family: jost, sans-serif;
+    letter-spacing: .09em;
+    color: white !important;
+}
+
+body.home {
+    background-color: #00b172;
+    background-image: url("../images/bg.png") !important; 
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+body.rest {
+    background-color: #00b172;
+    background-image: url("../images/bg2.png") !important; 
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-shadow: 1.3px 1.3px #0000005e;
+    line-height: 35px !important;
+}
+
+p {
+    font-size: 2vh;
+    text-shadow: 1.5px 1.5px #0000006c;
+}
+
+#profile {
+    font-size: 3.2vh;
+    text-shadow: 1.5px 1.5px #0000007e;
+}
+
+#homeText {
+    text-transform: uppercase;
+    margin-top: 3%;
+    padding: 1em 1em 1em 3em;
+}
+
+#mainTextMobile {
+    margin-left: 4%;
+    margin-top: 1%;
+    padding: 4em 1em 1em 1em;
+    letter-spacing: 3px;
+}
+
+#myName {
+    padding-bottom: .5em;
+    font-size: 6vh !important;
+    text-shadow: 2px 2px #0000007e;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.ui.inverted.menu {
+    background-color: #353446 !important;
+}
+
+.ui.inverted.menu .item, .ui.inverted.menu .item>a:not(.ui) {
+    text-transform: uppercase;
+}
+
+.ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
+    text-transform: uppercase !important;
+}
+
+.ui.grid.container {
+    margin-top: 3%;
+}
+
+.ui.menu>.container, .ui.menu>.grid {
+    width: 90%;
+}
