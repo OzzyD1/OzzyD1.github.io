@@ -26,44 +26,42 @@
 </head>
 <body class="rest">
 <!-- PC Nav -->
-<nav>
-    <div class="ui computer only padded grid">
-        <div class="ui borderless grey massive fixed top inverted menu">
-            <div class="ui container">
-                <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png" alt="Ozzy's Logo"></a>
-                <div class="right menu">
-                    <a class="item" href="index.html">Home</a>
-                    <a class="active item" href="websites.html">Websites</a>
-                    <a class="item" href="audio.html">Audio</a>
-                    <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
-                    <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
-                    <a class="item" href="https://www.linkedin.com/in/ozzyd/" target="_blank">LinkedIn</a>
-                </div>
+<div class="ui computer only padded grid">
+    <nav class="ui borderless grey massive fixed top inverted menu">
+        <div class="ui container">
+            <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png" alt="Ozzy's Logo"></a>
+            <div class="right menu">
+                <a class="item" href="index.html">Home</a>
+                <a class="active item" href="websites.html">Websites</a>
+                <a class="item" href="audio.html">Audio</a>
+                <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
+                <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
+                <a class="item" href="https://www.linkedin.com/in/ozzyd/" target="_blank">LinkedIn</a>
             </div>
         </div>
     </div>
+</div>
 <!-- Mobile Nav -->
-    <div class="ui tablet mobile only grid">
-        <div class="ui borderless grey massive fixed top inverted menu">
-            <div class="ui container">
-                <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png" alt="Ozzy's Logo"></a>
-                <div class="right menu">
-                    <div class="ui dropdown item"><i class="bars icon"></i>
-                        <div class="menu">
-                            <a class="item" href="index.html">Home</a>
-                            <a class="active item" href="websites.html">Websites</a>
-                            <a class="item" href="audio.html">Audio</a>
-                            <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
-                            <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
-                        </div>
+<div class="ui tablet mobile only grid">
+    <nav class="ui borderless grey massive fixed top inverted menu">
+        <div class="ui container">
+            <a class="item" href="index.html"><img class="logo" src="images/logoinverted.png" alt="Ozzy's Logo"></a>
+            <div class="right menu">
+                <div class="ui dropdown item"><i class="bars icon"></i>
+                    <div class="menu">
+                        <a class="item" href="index.html">Home</a>
+                        <a class="active item" href="websites.html">Websites</a>
+                        <a class="item" href="audio.html">Audio</a>
+                        <a class="item" href="https://github.com/OzzyD1" target="_blank">Github</a>
+                        <a class="item" href="https://www.behance.net/ozzydom" target="_blank">Behance</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</nav>
+</div>
 <!-- Body -->
-<div class="ui stackable grid container">
+<section class="ui stackable grid container">
     <div class="row">
         <div class="sixteen wide column">
             <h2>
@@ -87,6 +85,10 @@
             to. This included dark mode, JS plugins such as a carousel, a JSON array of objects
             and Handlebars to dynamically update the content on the website.
             </p>
+            <div class="ui labeled icon button">
+                <i class="server icon"></i>
+                <a href="https://ozzyd.me/musicclub-website/" target="_blank">Visit Project</a>
+            </div>
         </div>
     </div>
     <div class="ui divider"></div>
@@ -103,9 +105,13 @@
             string manipulation, functions, arrays, event listeners, DOM manipulation, Iteration,
             conditional statements, operators
             </p>
+            <div class="ui labeled icon button">
+                <i class="server icon"></i>
+                <a href="https://ozzyd.me/javascript-quiz/" target="_blank">Visit Project</a>
+            </div>
         </div>
     </div>
-</div>
+</section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 <script src="js/script.js"></script>

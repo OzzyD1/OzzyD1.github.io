@@ -9,7 +9,6 @@ body.home {
     background-image: url("../images/bg.png") !important; 
     background-size: 100% auto;
     background-repeat: no-repeat;
-    overflow: auto;
 }
 
 body.rest {
@@ -17,46 +16,54 @@ body.rest {
     background-image: url("../images/bg2.png") !important; 
     background-size: 100% auto;
     background-repeat: no-repeat;
-    overflow: auto;
-    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 7vh !important;
+    text-shadow: 2px 2px #0000007e;
 }
 
 h2 {
-    text-shadow: 1.3px 1.3px #0000005e;
+    text-shadow: 1.4px 1.4px #0000005e;
     line-height: 35px !important;
+    font-size: 3vh !important;
 }
 
 p {
     font-size: 2vh;
-    text-shadow: 1.5px 1.5px #0000006c;
-}
-
-#profile {
-    font-size: 3.2vh;
-    text-shadow: 1.5px 1.5px #0000007e;
-}
-
-#homeText {
-    text-transform: uppercase;
-    margin-top: 3%;
-    padding: 1em 1em 1em 3em;
-}
-
-#mainTextMobile {
-    margin-left: 4%;
-    margin-top: 1%;
-    padding: 4em 1em 1em 1em;
-    letter-spacing: 3px;
+    text-shadow: 1px 1px #0000006c;
 }
 
 #myName {
-    padding-bottom: .5em;
-    font-size: 6vh !important;
-    text-shadow: 2px 2px #0000007e;
+    letter-spacing: .5vw;
 }
 
-.uppercase {
+#profile {
+    padding-top: 2em;
+    font-size: 2.2vh;
+    text-shadow: 1.5px 1.5px #00000049;
+}
+
+#section1 {
     text-transform: uppercase;
+    margin: 3em 1em 1em 6em !important;
+    padding: 2em 2em 2em 2em;
+    height: 100vh;
+    display: inline-block !important;
+}
+
+#section2 {
+    height: 100vh;
+}
+
+#projectLinks {
+    color: white;
+    text-decoration: underline;
+}
+
+#uni {
+    margin: 0;
+    padding-top: 2em;
 }
 
 .ui.inverted.menu {
@@ -77,4 +84,17 @@ p {
 
 .ui.menu>.container, .ui.menu>.grid {
     width: 90%;
+}
+
+#section2 h1 {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    letter-spacing: .5vw;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+#section2 h2 {
+    text-transform: uppercase;
 }
