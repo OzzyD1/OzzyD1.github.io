@@ -21,12 +21,21 @@ body.rest {
 h1 {
     font-size: 7vh !important;
     text-shadow: 2px 2px #0000007e;
+    text-transform: uppercase;
 }
 
 h2 {
-    text-shadow: 1.4px 1.4px #0000005e;
-    line-height: 35px !important;
     font-size: 3vh !important;
+    text-shadow: 1.4px 1.4px #00000075;
+    line-height: 35px !important;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2vh !important;
+    text-shadow: 1.4px 1.4px #00000075;
+    line-height: 35px !important;
+    text-transform: uppercase;
 }
 
 p {
@@ -41,19 +50,20 @@ p {
 #profile {
     padding-top: 2em;
     font-size: 2.2vh;
-    text-shadow: 1.5px 1.5px #00000049;
+    text-shadow: 1.5px 1.5px #00000067;
+    text-transform: uppercase;
 }
 
 #section1 {
-    text-transform: uppercase;
-    margin: 3em 1em 1em 6em !important;
-    padding: 2em 2em 2em 2em;
     height: 100vh;
+    margin: 3em 1em 0em 6em !important;
+    padding: 2em 2em 0em 2em;
     display: inline-block !important;
 }
 
 #section2 {
     height: 100vh;
+    background-image: url("../images/bg2.png") !important;
 }
 
 #projectLinks {
@@ -63,7 +73,7 @@ p {
 
 #uni {
     margin: 0;
-    padding-top: 2em;
+    padding-top: .5em;
 }
 
 .ui.inverted.menu {
@@ -79,7 +89,7 @@ p {
 }
 
 .ui.grid.container {
-    margin-top: 3%;
+    margin-top: 5%;
 }
 
 .ui.menu>.container, .ui.menu>.grid {
@@ -92,9 +102,14 @@ p {
     width: 100%;
     letter-spacing: .5vw;
     text-transform: uppercase;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 #section2 h2 {
     text-transform: uppercase;
+}
+
+.ui.grid+.grid {
+    margin-top: 3.5em !important;
+    padding-top: 1em;
 }
