@@ -35,7 +35,7 @@ h3 {
     font-size: 2vh !important;
     text-shadow: 1.4px 1.4px #00000075;
     line-height: 35px !important;
-    text-transform: uppercase;
+    text-transform: uppercase; 
 }
 
 p {
@@ -43,9 +43,7 @@ p {
     text-shadow: 1px 1px #0000006c;
 }
 
-
-
-#myName {
+.my-name {
     letter-spacing: .5vw;
 }
 
@@ -58,14 +56,50 @@ p {
 
 #section1 {
     height: 100vh;
-    margin: 3em 1em 0em 6em !important;
-    padding: 2em 2em 0em 2em;
+    margin: 2em 1em 0em 6em !important;
     display: inline-block !important;
+}
+
+#section1-mobile h1.my-name {
+    font-size: 8vw !important;
+}
+
+#section1-mobile p {
+    font-size: 3vw !important;
+}
+
+#section1-mobile h2 {
+    font-size: 2.8vw !important;
+}
+
+#section1-mobile h4 {
+    font-size: .8em !important;
+    text-transform: none !important;
+    text-shadow: .5px .5px #0000007e;
 }
 
 #section2 {
     height: 100vh;
     background-image: url("../images/bg2.png") !important;
+}
+
+#section2-mobile > .ui.grid.container {
+    padding-top: 2em !important;
+}
+
+#section2-mobile h1 {
+    font-size: 3em !important;
+}
+
+#section2-mobile h2 {
+    font-size: 1em !important;
+    line-height: 1em !important;
+}
+
+#section2-mobile p {
+    font-size: .8em !important;
+    line-height: 1.2em !important;
+    text-shadow: .5px .5px #0000007e;
 }
 
 #projectLinks {
@@ -90,8 +124,12 @@ p {
     text-transform: uppercase !important;
 }
 
-.ui.grid.container {
-    margin-top: 5%;
+#section2 > .ui.grid.container {
+    display: inline !important;
+}
+
+#section2 > .ui.grid>* {
+    padding: 2em 5em !important;
 }
 
 .ui.menu>.container, .ui.menu>.grid {
@@ -114,4 +152,30 @@ p {
 .ui.grid+.grid {
     margin-top: 3.5em !important;
     padding-top: 1em;
+}
+
+@media screen and (max-width: 768px) {
+    h3 {
+        font-size: 1.5vh !important;
+        line-height: 1.8em !important;
+        text-shadow: 1px 1px #0000007e;
+        text-transform: none;
+    }
+
+    .ui.grid+.grid {
+        margin-top: 1em !important;
+        padding-top: 1.2em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .ui.button {
+        margin-top: 1em !important;
+    }
+
+    body.rest {
+        text-align: center !important;
+    }
 }
