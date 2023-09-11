@@ -154,6 +154,11 @@ p {
     padding-top: 1em;
 }
 
+.logo {
+    width: 6em !important;
+    height: auto; /* Maintain the aspect ratio */
+  }
+
 @media screen and (max-width: 768px) {
     h3 {
         font-size: 1.5vh !important;
@@ -178,4 +183,9 @@ p {
     body.rest {
         text-align: center !important;
     }
+
+    .logo {
+        width: 5em !important;
+        height: auto; /* Maintain the aspect ratio */
+      }
 }
