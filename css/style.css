@@ -1,21 +1,21 @@
-body { 
+body {
     font-family: jost, sans-serif;
-    letter-spacing: .09em;
+    letter-spacing: 0.09em;
     color: white !important;
 }
 
 body.home {
     background-color: #00b172;
-    background-image: url("../images/bg.png") !important; 
+    background-image: url("../images/bg.png") !important;
     background-size: 100% auto;
     background-repeat: no-repeat;
 }
 
 body.rest {
     background-color: #00b172;
-    background-image: url("../images/bg2.png") !important; 
+    background-image: url("../images/bg2.png") !important;
     background-size: 100% auto;
-    background-repeat: repeat-y ;
+    background-repeat: repeat-y;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h3 {
     font-size: 2vh !important;
     text-shadow: 1.4px 1.4px #00000075;
     line-height: 35px !important;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 p {
@@ -44,14 +44,14 @@ p {
 }
 
 .my-name {
-    letter-spacing: .5vw;
+    letter-spacing: 0.5vw;
 }
 
 #profile {
     padding-top: 2em;
-    font-size: 2.2vh;
+    font-size: 2.1vh;
     text-shadow: 1.5px 1.5px #00000067;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
 
 #section1 {
@@ -73,9 +73,9 @@ p {
 }
 
 #section1-mobile h4 {
-    font-size: .8em !important;
+    font-size: 0.8em !important;
     text-transform: none !important;
-    text-shadow: .5px .5px #0000007e;
+    text-shadow: 0.5px 0.5px #0000007e;
 }
 
 #section2 {
@@ -97,9 +97,9 @@ p {
 }
 
 #section2-mobile p {
-    font-size: .8em !important;
+    font-size: 0.8em !important;
     line-height: 1.2em !important;
-    text-shadow: .5px .5px #0000007e;
+    text-shadow: 0.5px 0.5px #0000007e;
 }
 
 #projectLinks {
@@ -109,14 +109,15 @@ p {
 
 #uni {
     margin: 0;
-    padding-top: .5em;
+    padding-top: 0.5em;
 }
 
 .ui.inverted.menu {
     background-color: #353446 !important;
 }
 
-.ui.inverted.menu .item, .ui.inverted.menu .item>a:not(.ui) {
+.ui.inverted.menu .item,
+.ui.inverted.menu .item > a:not(.ui) {
     text-transform: uppercase;
 }
 
@@ -128,11 +129,12 @@ p {
     display: inline !important;
 }
 
-#section2 > .ui.grid>* {
+#section2 > .ui.grid > * {
     padding: 2em 5em !important;
 }
 
-.ui.menu>.container, .ui.menu>.grid {
+.ui.menu > .container,
+.ui.menu > .grid {
     width: 90%;
 }
 
@@ -140,7 +142,7 @@ p {
     font-size: 40px;
     text-align: center;
     width: 100%;
-    letter-spacing: .5vw;
+    letter-spacing: 0.5vw;
     text-transform: uppercase;
     margin-top: 2em;
 }
@@ -149,7 +151,7 @@ p {
     text-transform: uppercase;
 }
 
-.ui.grid+.grid {
+.ui.grid + .grid {
     margin-top: 3.5em !important;
     padding-top: 1em;
 }
@@ -157,7 +159,7 @@ p {
 .logo {
     width: 6em !important;
     height: auto; /* Maintain the aspect ratio */
-  }
+}
 
 @media screen and (max-width: 768px) {
     h3 {
@@ -167,7 +169,7 @@ p {
         text-transform: none;
     }
 
-    .ui.grid+.grid {
+    .ui.grid + .grid {
         margin-top: 1em !important;
         padding-top: 1.2em;
     }
@@ -187,5 +189,5 @@ p {
     .logo {
         width: 5em !important;
         height: auto; /* Maintain the aspect ratio */
-      }
+    }
 }
