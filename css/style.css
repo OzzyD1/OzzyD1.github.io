@@ -1,9 +1,11 @@
+/* Base styles */
 body {
     font-family: jost, sans-serif;
     letter-spacing: 0.09em;
     color: white !important;
 }
 
+/* Background styles */
 body.home {
     background-color: #00b172;
     background-image: url("../images/bg.png") !important;
@@ -18,29 +20,34 @@ body.rest {
     background-repeat: repeat-y;
 }
 
+/* Typography */
 h1 {
-    font-size: 7vh !important;
+    font-size: clamp(2rem, 7vh, 4rem) !important;
     text-shadow: 2px 2px #0000007e;
     text-transform: uppercase;
 }
 
 h2 {
-    font-size: 3vh !important;
+    font-size: clamp(1.2rem, 3vh, 2rem) !important;
     text-shadow: 1.4px 1.4px #00000075;
-    line-height: 35px !important;
-    text-transform: uppercase;
-}
-
-h3 {
-    font-size: 2vh !important;
-    text-shadow: 1.4px 1.4px #00000075;
-    line-height: 35px !important;
+    line-height: 1.4 !important;
     text-transform: uppercase;
 }
 
 p {
-    font-size: 2vh;
+    font-size: clamp(1rem, 2vh, 1.5rem);
     text-shadow: 1px 1px #0000006c;
+}
+
+/* Layout components */
+#section1 {
+    min-height: 100vh;
+    padding: 2em 1em;
+}
+
+#section2 {
+    background-image: url("../images/bg2.png") !important;
+    padding: 2em 0;
 }
 
 .my-name {
@@ -49,124 +56,34 @@ p {
 
 #profile {
     padding-top: 2em;
-    font-size: 2.1vh;
+    font-size: clamp(1rem, 2.1vh, 1.5rem);
     text-shadow: 1.5px 1.5px #00000067;
-    /* text-transform: uppercase; */
 }
 
-#section1 {
-    height: 100vh;
-    margin: 2em 1em 0em 6em !important;
-    display: inline-block !important;
-}
-
-#section1-mobile h1.my-name {
-    font-size: 8vw !important;
-}
-
-#section1-mobile p {
-    font-size: 3vw !important;
-}
-
-#section1-mobile h2 {
-    font-size: 2.8vw !important;
-}
-
-#section1-mobile h4 {
-    font-size: 0.8em !important;
-    text-transform: none !important;
-    text-shadow: 0.5px 0.5px #0000007e;
-}
-
-#section2 {
-    height: 100vh;
-    background-image: url("../images/bg2.png") !important;
-}
-
-#section2-mobile > .ui.grid.container {
-    padding-top: 2em !important;
-}
-
-#section2-mobile h1 {
-    font-size: 3em !important;
-}
-
-#section2-mobile h2 {
-    font-size: 1em !important;
-    line-height: 1em !important;
-}
-
-#section2-mobile p {
-    font-size: 0.8em !important;
-    line-height: 1.2em !important;
-    text-shadow: 0.5px 0.5px #0000007e;
-}
-
-#projectLinks {
-    color: white;
-    text-decoration: underline;
-}
-
-#uni {
-    margin: 0;
-    padding-top: 0.5em;
-}
-
+/* Navigation */
 .ui.inverted.menu {
     background-color: #353446 !important;
 }
 
 .ui.inverted.menu .item,
-.ui.inverted.menu .item > a:not(.ui) {
-    text-transform: uppercase;
-}
-
+.ui.inverted.menu .item > a:not(.ui),
 .ui.menu .ui.dropdown.item .menu .item:not(.filtered) {
-    text-transform: uppercase !important;
-}
-
-#section2 > .ui.grid.container {
-    display: inline !important;
-}
-
-#section2 > .ui.grid > * {
-    padding: 2em 5em !important;
-}
-
-.ui.menu > .container,
-.ui.menu > .grid {
-    width: 90%;
-}
-
-#section2 h1 {
-    font-size: 40px;
-    text-align: center;
-    width: 100%;
-    letter-spacing: 0.5vw;
     text-transform: uppercase;
-    margin-top: 2em;
-}
-
-#section2 h2 {
-    text-transform: uppercase;
-}
-
-.ui.grid + .grid {
-    margin-top: 3.5em !important;
-    padding-top: 1em;
 }
 
 .logo {
     width: 6em !important;
-    height: auto; /* Maintain the aspect ratio */
+    height: auto;
 }
 
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    h3 {
-        font-size: 1.5vh !important;
-        line-height: 1.8em !important;
-        text-shadow: 1px 1px #0000007e;
-        text-transform: none;
+    .logo {
+        width: 5em !important;
+    }
+
+    #section1 {
+        margin: 1em !important;
     }
 
     .ui.grid + .grid {
@@ -174,20 +91,21 @@ p {
         padding-top: 1.2em;
     }
 
-    p {
-        font-size: 1em;
-    }
-
-    .ui.button {
-        margin-top: 1em !important;
-    }
-
     body.rest {
         text-align: center !important;
     }
+}
 
-    .logo {
-        width: 5em !important;
-        height: auto; /* Maintain the aspect ratio */
+@media screen and (min-width: 769px) {
+    #section1 {
+        margin: 2em 1em 0em 6em !important;
+    }
+
+    #section2 > .ui.grid > * {
+        padding: 2em 5em !important;
+    }
+
+    .ui.grid + .grid {
+        margin-top: 3.5em !important;
     }
 }
