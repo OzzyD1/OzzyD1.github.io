@@ -29,9 +29,14 @@ h1 {
 
 h2 {
     font-size: clamp(1.2rem, 3vh, 2rem) !important;
-    text-shadow: 1.4px 1.4px #00000075;
+    text-shadow: 1.4px 1.4px #00000028;
     line-height: 1.4 !important;
     text-transform: uppercase;
+}
+
+h3 {
+    font-size: clamp(1.1rem, 2.5vh, 1.7rem);
+    text-shadow: 1.4px 1.4px #00000075;
 }
 
 p {
@@ -74,6 +79,25 @@ p {
 .logo {
     width: 6em !important;
     height: auto;
+}
+
+/* Project Layouts */
+.project-row,
+.audio-project {
+    margin: 2em 0;
+}
+
+.project-buttons {
+    margin-top: 1em;
+}
+
+.project-buttons .button {
+    margin: 0.5em;
+}
+
+.audio-project audio {
+    width: 100%;
+    margin: 1em 0;
 }
 
 /* Responsive adjustments */
