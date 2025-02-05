@@ -29,30 +29,41 @@ h1 {
 
 h2 {
     font-size: clamp(1.2rem, 3vh, 2rem) !important;
-    text-shadow: 1.4px 1.4px #00000028;
+    text-shadow: 1.6px 1.6px #0000007e;
     line-height: 1.4 !important;
     text-transform: uppercase;
 }
 
 h3 {
     font-size: clamp(1.1rem, 2.5vh, 1.7rem);
-    text-shadow: 1.4px 1.4px #00000075;
+    text-shadow: 1.4px 1.4px #0000007e;
 }
 
 p {
     font-size: clamp(1rem, 2vh, 1.5rem);
-    text-shadow: 1px 1px #0000006c;
+    text-shadow: 1.2px 1.2px #0000007e;
 }
 
 /* Layout components */
 #section1 {
-    min-height: 100vh;
+    min-height: 50vh;
     padding: 2em 1em;
 }
 
 #section2 {
-    background-image: url("../images/bg2.png") !important;
+    width: 100% !important;
+    margin: 0 !important;
     padding: 2em 0;
+}
+
+#section2 .ui.grid.container {
+    width: 100% !important;
+    margin: 0 !important;
+    max-width: none !important;
+}
+
+#section2 .ui.stackable.row {
+    padding: 0 2em;
 }
 
 .my-name {
