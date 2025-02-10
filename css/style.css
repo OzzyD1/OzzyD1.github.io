@@ -46,8 +46,8 @@ p {
 
 /* Layout components */
 #section1 {
-    min-height: 50vh;
-    padding: 2em 1em;
+    width: 100% !important;
+    min-height: 85vh;
 }
 
 #section2 {
