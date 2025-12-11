@@ -31,13 +31,13 @@ function FeaturedSection() {
     return (
         <>
             <section
-                className="min-h-[80vh] py-12 max-w-7xl mx-auto"
+                className="min-h-[80vh] py-12 px-2 max-w-7xl mx-auto"
                 data-section="featured"
                 style={{ backgroundColor: "var(--warm-bg)", color: "var(--off-black)" }}
             >
                 <div>
                     {/* Section Header */}
-                    <h2 className="text-2xl md:text-4xl font-bold mb-12 tracking-wider">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-wider">
                         {">"} FEATURED
                     </h2>
 

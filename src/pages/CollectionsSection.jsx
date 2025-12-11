@@ -47,13 +47,13 @@ function CollectionsSection() {
     return (
         <>
             <section
-                className="min-h-[80vh] py-12"
+                className="min-h-[80vh] max-w-7xl mx-auto px-2 py-12"
                 style={{ backgroundColor: "var(--warm-bg)", color: "var(--off-black)" }}
             >
-                <div className="max-w-7xl mx-auto">
+                <div>
                     {/* Collections Section */}
                     <div>
-                        <h2 className="text-2xl md:text-4xl font-bold mb-12 tracking-wider">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-wider">
                             {">"} COLLECTIONS
                         </h2>
 

@@ -19,13 +19,13 @@ const SOCIAL_LINKS = [
 function AboutSection() {
     return (
         <section
-            className="min-h-[80vh] px-6 py-12 scroll-mt-24 md:scroll-mt-32"
+            className="min-h-[80vh] px-2 py-12 scroll-mt-24 md:scroll-mt-32"
             data-section="about"
             style={{ backgroundColor: "var(--warm-bg)", color: "var(--off-black)" }}
         >
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
-                <h2 className="text-2xl md:text-4xl font-bold mb-12 tracking-wider">
+                <h2 className="text-3xl md:text-4xl font-bold mb-12 tracking-wider">
                     {">"} ABOUT ME
                 </h2>
 
