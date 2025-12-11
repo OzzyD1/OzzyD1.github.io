@@ -47,13 +47,13 @@ function CollectionsSection() {
     return (
         <>
             <section
-                className="min-h-[70vh] px-6 py-12"
-                style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
+                className="min-h-[80vh] py-12"
+                style={{ backgroundColor: "var(--warm-bg)", color: "var(--off-black)" }}
             >
                 <div className="max-w-7xl mx-auto">
                     {/* Collections Section */}
                     <div>
-                        <h2 className="text-2xl md:text-3xl font-bold mb-12 tracking-wider">
+                        <h2 className="text-2xl md:text-4xl font-bold mb-12 tracking-wider">
                             {">"} COLLECTIONS
                         </h2>
 
@@ -74,8 +74,8 @@ function CollectionsSection() {
                     </div>
 
                     {/* Skills Section */}
-                    <div>
-                        <h2 className="text-3xl md:text-3xl font-bold mb-6 tracking-wider">
+                    <div className="mt-45">
+                        <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-wider">
                             {">"} SKILLS
                         </h2>
 
@@ -125,7 +125,7 @@ function CollectionCard({ item, onClick }) {
             `}
             style={{
                 border: "4px solid #2a2a2a",
-                backgroundColor: "#f5f2eb",
+                backgroundColor: "var(--warm-bg)",
                 boxShadow: item.contentId
                     ? "0 0 0 0 rgba(42, 42, 42, 1)"
                     : "none",

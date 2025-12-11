@@ -43,17 +43,19 @@ function Modal({ content, isOpen, onClose, type = "project" }) {
             aria-modal="true"
             aria-labelledby="modal-title"
         >
+            {/* Opacity behind opened modal */}
             <div
                 className="fixed inset-0 bg-opacity-50"
                 style={{ backgroundColor: "rgba(42, 42, 42, 0.5)" }}
                 onClick={handleBackdropClick}
                 aria-hidden="true"
             />
-
+            
+            {/* Modal border */}
             <div
-                className="relative w-full max-w-6xl max-h-[85vh] overflow-hidden flex flex-col"
+                className="relative w-full max-w-7xl max-h-[85vh] overflow-hidden flex flex-col"
                 style={{
-                    backgroundColor: "#f5f2eb",
+                    backgroundColor: "var(--warm-bg)",
                     border: "4px solid #2a2a2a",
                 }}
             >
@@ -75,8 +77,8 @@ function ModalHeader({ content, onClose }) {
             className="flex justify-between items-center p-6"
             style={{
                 borderBottom: "4px solid #2a2a2a",
-                backgroundColor: "#f5f2eb",
-                color: "#2a2a2a",
+                backgroundColor: "var(--warm-bg)",
+                color: "var(--off-black)",
             }}
         >
             <div>
@@ -106,7 +108,7 @@ function ModalContent({ content, type }) {
     return (
         <div
             className="flex-1 overflow-y-auto"
-            style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
+            style={{ backgroundColor: "var(--warm-bg)", color: "var(--off-black)" }}
         >
             <div className="p-6 space-y-8">
                 {content.overview && (
@@ -213,8 +215,8 @@ function LinkButton({ type, url }) {
             "
             style={{
                 border: "4px solid #2a2a2a",
-                backgroundColor: "#f5f2eb",
-                color: "#2a2a2a",
+                backgroundColor: "var(--warm-bg)", 
+                color: "var(--off-black)",
                 boxShadow: "0 0 0 0 rgba(42, 42, 42, 1)",
             }}
             onMouseEnter={(e) => {

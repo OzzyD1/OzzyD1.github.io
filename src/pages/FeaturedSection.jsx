@@ -31,13 +31,13 @@ function FeaturedSection() {
     return (
         <>
             <section
-                className="min-h-[80vh] px-6 py-12"
+                className="min-h-[80vh] py-12 max-w-7xl mx-auto"
                 data-section="featured"
-                style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
+                style={{ backgroundColor: "var(--warm-bg)", color: "var(--off-black)" }}
             >
-                <div className="max-w-7xl mx-auto">
+                <div>
                     {/* Section Header */}
-                    <h2 className="text-2xl md:text-3xl font-bold mb-12 tracking-wider">
+                    <h2 className="text-2xl md:text-4xl font-bold mb-12 tracking-wider">
                         {">"} FEATURED
                     </h2>
 
@@ -84,15 +84,15 @@ function ProjectCard({ project, className, onClick }) {
             `}
             style={{
                 border: "4px solid #2a2a2a",
-                backgroundColor: "#f5f2eb",
+                backgroundColor: "var(--warm-bg)",
                 boxShadow: "0 0 0 0 rgba(42, 42, 42, 1)",
             }}
             onMouseEnter={(e) => {
-                e.target.style.boxShadow =
+                e.currentTarget.style.boxShadow =
                     "8px 8px 0px 0px rgba(42, 42, 42, 1)";
             }}
             onMouseLeave={(e) => {
-                e.target.style.boxShadow = "0 0 0 0 rgba(42, 42, 42, 1)";
+                e.currentTarget.style.boxShadow = "0 0 0 0 rgba(42, 42, 42, 1)";
             }}
             onClick={onClick}
             onKeyDown={(e) => e.key === "Enter" && onClick()}

@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 :root {
-    --warm-bg: #f5f2eb;
+    /* --warm-bg: #f5f2eb; */
+        --warm-bg: #f7f6f3;
     --off-black: #2a2a2a;
 }
 

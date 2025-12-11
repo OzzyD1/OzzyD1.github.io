@@ -21,11 +21,11 @@ function AboutSection() {
         <section
             className="min-h-[80vh] px-6 py-12 scroll-mt-24 md:scroll-mt-32"
             data-section="about"
-            style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
+            style={{ backgroundColor: "var(--warm-bg)", color: "var(--off-black)" }}
         >
             <div className="max-w-7xl mx-auto">
                 {/* Section Header */}
-                <h2 className="text-2xl md:text-3xl font-bold mb-12 tracking-wider">
+                <h2 className="text-2xl md:text-4xl font-bold mb-12 tracking-wider">
                     {">"} ABOUT ME
                 </h2>
 
@@ -121,7 +121,7 @@ function SocialLink({ link }) {
             "
             style={{
                 border: "4px solid #2a2a2a",
-                backgroundColor: "#f5f2eb",
+                backgroundColor: "var(--warm-bg)",
                 boxShadow: "0 0 0 0 rgba(42, 42, 42, 1)",
             }}
             onMouseEnter={(e) => {

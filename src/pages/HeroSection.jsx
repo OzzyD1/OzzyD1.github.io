@@ -9,9 +9,9 @@ function HeroSection() {
     };
 
     return (
-        <div
+        <section
             className="min-h-screen relative overflow-hidden"
-            style={{ backgroundColor: "#f5f2eb", color: "#2a2a2a" }}
+            style={{ backgroundColor: "var(--warm-bg)", color: "var(--off-black)" }}
         >
             <main className="flex min-h-screen flex-col items-center justify-center px-6 text-center relative">
                 {/* Top label */}
@@ -22,7 +22,7 @@ function HeroSection() {
                 {/* Name + underline block */}
                 <div className="space-y-6">
                     <div>
-                        <h1 className="mb-3 text-7xl md:text-8xl lg:text-[7.5rem] leading-none">
+                        <h1 className="mb-3 text-7xl md:text-9xl leading-none">
                             <span className="mb-3 text-4xl md:text-5xl lg:text-[4rem] font-light tracking-tighter">
                                 I&apos;M{" "}
                             </span>
@@ -31,7 +31,7 @@ function HeroSection() {
                             </span>
                         </h1>
 
-                        {/* Memphis underline */}
+                        {/* underline */}
                         <div className="mx-auto mt-4 flex items-center justify-center gap-2">
                             <div
                                 className="h-1 w-24"
@@ -47,14 +47,14 @@ function HeroSection() {
                             />
                         </div>
 
-                        <p className="mt-6 text-xl md:text-2xl lg:text-3xl tracking-widest uppercase">
+                        <p className="mt-6 text-xl md:text-4xl tracking-widest uppercase">
                             A Multi‑Disciplinary Designer
                         </p>
                     </div>
 
                     {/* Typing */}
                     <div className="pt-10">
-                        <div className="text-2xl md:text-3xl lg:text-4xl">
+                        <div className="text-2xl md:text-5xl">
                             <TypingAnimation
                                 staticPrefix="> I CREATE "
                                 textArray={TYPING_WORDS}
@@ -101,7 +101,7 @@ function HeroSection() {
                     </button>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
