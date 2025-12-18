@@ -4,7 +4,7 @@ export const supplyChainProject = {
     description: "CORPORATE EXPLAINER | BUSINESS INTELLIGENCE",
     overview: `
     <p><em>Moving Parts</em> is a corporate explainer video I produced during my time at KOSTAL, an international automotive company. The project aimed to visualise how global disruptions, such as extreme weather, piracy and the Suez Canal blockage can affect the delivery of parts from Asia to Ireland.</p>
-    <p>I designed, animated and narrated the piece myself, using <strong>After Effects</strong> to bring the logistics journey to life through a branded world map. The video highlighted real risks to production and explained how delays cascade through the supply chain.</p>
+    <p>I designed, animated and narrated the piece myself, using After Effects to bring the logistics journey to life through a branded world map. The video highlighted real risks to production and explained how delays cascade through the supply chain.</p>
     <p>The result was an engaging internal communication tool that combined research, storytelling and design to help teams better understand the realities of global logistics.</p>
   `,
     year: "2024",

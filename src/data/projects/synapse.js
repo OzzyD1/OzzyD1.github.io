@@ -5,7 +5,7 @@ export const synapseProject = {
     overview: `
     <p><em>Synapse</em> is an interactive short story and my final year project, blending live-action filmmaking with web interactivity. Built in React with Framer Motion, it lets viewers make choices that branch the story of a reclusive programmer in a near-future dystopia who must decide whether to adopt a brain–computer interface to keep his job.</p>
     <p>I handled everything myself from <strong>scriptwriting</strong> and <strong>filming</strong> to <strong>editing</strong>, <strong>sound design</strong> and <strong>interactive development</strong>. The goal was to create something that felt cinematic yet reactive, where each choice carried emotional weight and every branch stayed true to the story’s tone.</p>
-    <p>It was a huge challenge to balance narrative pacing with smooth user experience, but it became one of my most personal pieces — an exploration of control, isolation and the cost of progress.</p>
+    <p>It was a huge challenge to balance narrative pacing with smooth user experience, but it became one of my most personal pieces, an exploration of control, isolation and the cost of progress.</p>
   `,
     year: "2024–2025",
     role: "Writer, Director, Developer, Editor, Composer",

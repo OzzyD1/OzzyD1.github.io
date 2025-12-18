@@ -4,7 +4,7 @@ export const weekx52Project = {
   description: "PRODUCT DESIGN | DEVELOPMENT | MARKETING",
   overview: `
     <p>
-      <strong>52weekx</strong> is a privacy-first PWA designed to help people discover one new activity every week. 
+      <em>52weekx</em> is a privacy-first PWA designed to help people discover one new activity every week. 
       I joined at the early stages and shaped the product across design, development and marketing.
     </p>
     <p>

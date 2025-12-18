@@ -2,6 +2,12 @@ import { useModal } from "../hooks/useModal";
 import Modal from "../components/Modal";
 
 const COLLECTIONS = [
+        {
+        id: 1,
+        contentId: "motion",
+        title: "[ MOTION ]",
+        gridClass: "col-span-1",
+    },
     {
         id: 2,
         contentId: "web",
@@ -57,7 +63,7 @@ function CollectionsSection() {
                             {">"} COLLECTIONS
                         </h2>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
                             {COLLECTIONS.map((item) => (
                                 <div key={item.id} className={item.gridClass}>
                                     <CollectionCard
@@ -74,7 +80,7 @@ function CollectionsSection() {
                     </div>
 
                     {/* Skills Section */}
-                    <div className="mt-45">
+                    <div className="mt-65">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 tracking-wider">
                             {">"} SKILLS
                         </h2>
@@ -132,13 +138,13 @@ function CollectionCard({ item, onClick }) {
             }}
             onMouseEnter={(e) => {
                 if (item.contentId) {
-                    e.target.style.boxShadow =
+                    e.currentTarget.style.boxShadow =
                         "8px 8px 0px 0px rgba(42, 42, 42, 1)";
                 }
             }}
             onMouseLeave={(e) => {
                 if (item.contentId) {
-                    e.target.style.boxShadow = "0 0 0 0 rgba(42, 42, 42, 1)";
+                    e.currentTarget.style.boxShadow = "0 0 0 0 rgba(42, 42, 42, 1)";
                 }
             }}
             onClick={handleClick}
