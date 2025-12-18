@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.35 80.19">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 94.47 54">
   <defs>
     <style>
       .cls-1 {
-        stroke-linecap: square;
-        stroke-linejoin: bevel;
-      }
-
-      .cls-1, .cls-2 {
-        font-family: Mono45Headline-Bold, 'Mono45 Headline';
-        font-size: 72px;
-        font-weight: 700;
-        letter-spacing: -.09em;
-        stroke: #fff;
-        stroke-width: 2px;
-      }
-
-      .cls-2 {
-        stroke-linecap: round;
-        stroke-linejoin: round;
+        fill: #2b2b2b;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
     <g>
-      <text class="cls-2" transform="translate(1 61.77)"><tspan x="0" y="0">O</tspan></text>
-      <text class="cls-1" transform="translate(27.67 61.77)"><tspan x="0" y="0">D</tspan></text>
+      <path class="cls-1" d="M22.39,54C4.39,54,0,48.1,0,39.32V14.76C0,5.98,4.39,0,22.39,0s22.32,5.98,22.32,14.76v24.55c0,8.79-4.32,14.69-22.32,14.69ZM22.39,40.11c5.26,0,6.05-1.44,6.05-3.38v-19.37c0-1.87-.79-3.31-6.05-3.31s-6.05,1.44-6.05,3.31v19.37c0,1.94.86,3.38,6.05,3.38Z"/>
+      <path class="cls-1" d="M52.49,52.92c-1.8,0-2.59-.79-2.59-2.59V3.67c0-1.8.79-2.59,2.59-2.59h24.27c12.1,0,17.71,4.68,17.71,14.69v22.47c0,10.01-5.62,14.69-17.71,14.69h-24.27ZM66.24,39.32h8.57c2.3,0,3.38-1.08,3.38-3.53v-17.5c0-2.38-1.08-3.46-3.38-3.46h-8.57v24.48Z"/>
     </g>
   </g>
 </svg>

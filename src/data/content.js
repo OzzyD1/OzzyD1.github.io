@@ -2,6 +2,7 @@
 import { synapseProject } from "./projects/synapse.js";
 import { supplyChainProject } from "./projects/supply-chain.js";
 import { andrewFilmProject } from "./projects/andrew-film.js";
+import { weekx52Project } from "./projects/52weekx.js";
 
 // Import individual collection files
 import { webCollection } from "./collections/web.js";
@@ -14,6 +15,7 @@ export const PROJECTS = {
     synapse: synapseProject,
     "supply-chain": supplyChainProject,
     "andrew-film": andrewFilmProject,
+    "52weekx": weekx52Project,
 };
 
 export const COLLECTIONS = {

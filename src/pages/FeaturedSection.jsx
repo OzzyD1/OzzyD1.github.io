@@ -4,24 +4,31 @@ import Modal from "../components/Modal";
 const PROJECTS = [
     {
         id: 1,
-        contentId: "synapse",
-        title: "SYNAPSE",
-        description: "INTERACTIVE SHORT STORY | FOURTH YEAR PROJECT",
-        gridClass: "lg:col-span-3",
+        contentId: "52weekx",
+        title: "52WEEKX",
+        description: "PRODUCT DESIGN | DEVELOPMENT | MARKETING",
+        gridClass: "lg:col-span-2",
     },
-    {
-        id: 2,
+        {
+        id: 3,
         contentId: "supply-chain",
         title: "MOVING PARTS",
         description: "ANIMATED EXPLAINER | BUSINESS INTELLIGENCE",
-        gridClass: "lg:col-span-2",
+        gridClass: "lg:col-span-1",
     },
-    {
-        id: 3,
+        {
+        id: 4,
         contentId: "andrew-film",
         title: "A DAY IN THE LIFE OF ANDREW",
         description: "DIRECTING | EDITING | VFX",
         gridClass: "lg:col-span-1",
+    },
+    {
+        id: 2,
+        contentId: "synapse",
+        title: "SYNAPSE",
+        description: "INTERACTIVE SHORT STORY | FOURTH YEAR PROJECT",
+        gridClass: "lg:col-span-2",
     },
 ];
 
