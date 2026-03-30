@@ -1,8 +1,8 @@
 const SOCIAL_LINKS = [
     {
         id: 1,
-        name: "CV",
-        url: "assets/documents/CV.pdf",
+        name: "Resume",
+        url: "assets/documents/Osvaldas_Domarkas_Resume.pdf",
     },
     {
         id: 2,
@@ -113,6 +113,8 @@ function SocialLink({ link }) {
     return (
         <a
             href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="
                 px-4 py-3 text-center font-bold
                 cursor-pointer transition-all duration-200
